@@ -41,3 +41,12 @@ Step 2. Choose your repository and configure settings with options:
 Step 3. Select `Deploy site`
 
 Good luck!
+
+<!-- 1- npm init
+2- npm install react react-dom (all lowercase)
+3- create new index.html (rename olderone)
+4- create script.js and link it in index
+5- import your dependencies into script.js (import react...)
+6- run parcel index.html
+7- start coding -->
+
