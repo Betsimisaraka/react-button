@@ -6,18 +6,14 @@ html {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: repeat(4, 250px);
 }
 
 .btn_container {
     padding-bottom: 2rem;
 }
 
-.btn_container p {
-    margin: 0 0 0.5rem 0;
-}
-
-.default {
+button {
     background: #E0E0E0;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
@@ -29,12 +25,13 @@ html {
     border: 0;
 }
 
-.default_hover, 
-.default_focus {
+
+button:hover, 
+button:focus {
     background: #AEAEAE;
 }
 
-.variant_outline {
+ .outline {
     border: 1px solid #3D5AFE;
     color: #3D5AFE;
     border-radius: 6px;
@@ -43,8 +40,8 @@ html {
     box-shadow: none;
 }
 
-.variant_outline__hover, 
-.variant_outline__focus {
+.outline:hover, 
+.outline:focus {
     background: rgba(41, 98, 255, 0.1);
     padding: 8px 20px 8px 19px;
     box-shadow: none;
@@ -52,22 +49,107 @@ html {
     color: #3D5AFE;
 }
 
-.variant_text {
+.text {
     background: white;
     color: #3D5AFE;
     box-shadow: none;
+    border: none;
 }
 
-.variant_text__hover, 
-.variant_text__focus {
+.text:hover, 
+.text:focus {
     background:rgba(41, 98, 255, 0.1);
     padding: 8px 19px 8px 20px;
     box-shadow: none;
     color: #3D5AFE;
+    border-radius: 6px;
 }
 
-.disableshadow {
+.disabledshadow {
     color: #FFFFFF;
     background: #3D5AFE;
     box-shadow: none;
 }
+
+.disabledshadow:hover {
+    background: #3D5AFE;
+}
+
+.disabled {
+    color: #9E9E9E;
+    background: #E0E0E0;
+    padding: 8px 13px 8px 13px;
+    box-shadow: none;
+}
+
+.disabled:hover {
+    background: #E0E0E0;
+    padding: 8px 13px 8px 13px;
+}
+
+.disabledText {
+    color: #9E9E9E;
+    background: none;
+    box-shadow: none;
+}
+
+.disabledText:hover {
+    color: #9E9E9E;
+    background: none;
+    box-shadow: none;
+}
+
+.small:hover,
+.small {
+    color: #FFFFFF;
+    background: #2962FF;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+    padding: 6px 12px 6px 12px;
+}
+
+.medium:hover,
+.medium {
+    color: #FFFFFF;
+    background: #2962FF;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    padding: 8px 16px 8px 16px;
+}
+
+.large:hover,
+.large {
+    color: #FFFFFF;
+    background: #2962FF;
+    box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
+    padding: 11px 22px 11px 22px;
+}
+
+.primary {
+    color: #FFFFFF;
+    background: #2962FF;
+    box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+}
+
+.secondary {
+    color: #FFFFFF;
+    background: #455A64;
+    box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+}
+
+.danger {
+    color: #FFFFFF;
+    background: #D32F2F;
+    box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
+}
+
+.primary:hover {
+    background: #0039CB;
+}
+
+.secondary:hover {
+    background: #1C313A;
+}
+
+.danger:hover {
+    background: #9A0007;
+}
+

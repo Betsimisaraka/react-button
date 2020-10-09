@@ -5,59 +5,56 @@ import Buttons from './Buttons'
 function App() {
     return  (
         <div>
-            <div className="wrapper">
-                <Buttons btn = {{
-                        class: "default",
-                        text: "Default",
-                        textContent: "<Button />"
-                    }}
-                />
-                <Buttons btn = {{
-                        class: "default default_hover default_focus",
-                        text: "Default",
-                        textContent: "&:hover, &:focus"
-                    }}
-                />
-            </div>
-            <div className="wrapper">
-                <Buttons 
-                    btn = {{
-                        class: "default variant_outline",
-                        text: "Default",
-                        textContent: "<Button variant='outline' />"
-                    }}
-                />
-                <Buttons 
-                    btn = {{
-                        class: "default variant_outline__hover variant_outline__focus",
-                        text: "Default",
-                        textContent: "&:hover, &:focus"
-                    }}
-                />
-            </div>
-            <div className="wrapper">
-                <Buttons 
-                    btn = {{
-                        class: "default variant_text",
-                        text: "Default",
-                        textContent: "<Button variant='text' />"
-                    }}
-                />
-                <Buttons 
-                    btn = {{
-                        class: "default variant_text__hover variant_text__focus",
-                        text: "Default",
-                        textContent: "&:hover, &:focus"
-                    }}
-                />
+            <div>
+                <Buttons text="<Button />">
+                    Default
+                </Buttons>
             </div>
             <div>
-                <Buttons btn = {{
-                        class: "default disableshadow",
-                        text: "Default",
-                        textContent: "<Button disableShadow />"
-                    }}
-                />
+                <Buttons variant="outline" text="<Button variant='outline' />">
+                    Default
+                </Buttons>
+            </div>
+            <div>
+                <Buttons variant="text" text="<Button variant='text' />">
+                    Default
+                </Buttons>
+            </div>
+            <div>
+                <Buttons disabledShadow text="<Button disabledShadow />">Default</Buttons>
+            </div>
+            <div className="wrapper">
+                <Buttons disabled text="<Button disabled />">
+                    Disabled
+                </Buttons>
+                <Buttons variant="text" disabled text="<Button variant='text' disabled />">
+                    Disabled
+                </Buttons>
+            </div>
+            <div className="wrapper">
+                <Buttons size="sm" text="<Button size='sm' />">
+                    Default
+                </Buttons>
+                <Buttons size="md" text="<Button size='md' />">
+                    Default
+                </Buttons>
+                <Buttons size="lg" text="<Button size='lg' />">
+                    Default
+                </Buttons>
+            </div>
+            <div className="wrapper">
+                <Buttons color="default" text="<Button color='default' />">
+                    Default
+                </Buttons>
+                <Buttons color="primary" text="<Button color='primary' />">
+                    Default
+                </Buttons>
+                <Buttons color="secondary" text="<Button color='secondary' />">
+                    Secondary
+                </Buttons>
+                <Buttons color="danger" text="<Button color='danger' />">
+                   Danger
+                </Buttons>
             </div>
         </div>
     )
