@@ -6,7 +6,7 @@ html {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 320px);
 }
 
 .btn_container {
@@ -29,6 +29,15 @@ button {
 button:hover, 
 button:focus {
     background: #AEAEAE;
+}
+
+.section p {
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    padding-bottom: 1rem;
 }
 
  .outline {
@@ -65,16 +74,14 @@ button:focus {
     border-radius: 6px;
 }
 
+.disabledshadow:hover,
 .disabledshadow {
     color: #FFFFFF;
     background: #3D5AFE;
     box-shadow: none;
 }
 
-.disabledshadow:hover {
-    background: #3D5AFE;
-}
-
+.disabled:hover,
 .disabled {
     color: #9E9E9E;
     background: #E0E0E0;
@@ -82,21 +89,19 @@ button:focus {
     box-shadow: none;
 }
 
-.disabled:hover {
-    background: #E0E0E0;
-    padding: 8px 13px 8px 13px;
-}
-
+.disabledText:hover,
 .disabledText {
     color: #9E9E9E;
     background: none;
     box-shadow: none;
 }
 
-.disabledText:hover {
-    color: #9E9E9E;
-    background: none;
-    box-shadow: none;
+.endIcon:hover,
+.startIcon:hover,
+.endIcon,
+.startIcon {
+    color: #FFFFFF;
+    background: #2962FF;
 }
 
 .small:hover,
