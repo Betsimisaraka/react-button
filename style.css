@@ -1,12 +1,19 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main {
     margin-left: 2rem;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 320px);
+    grid-template-columns: repeat(4, 350px)
 }
 
 .btn_container {
@@ -14,7 +21,6 @@ html {
 }
 
 button {
-    background: #E0E0E0;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
     font-weight: 500;
@@ -25,9 +31,12 @@ button {
     border: 0;
 }
 
+.default {
+    background: #E0E0E0;
+}
 
-button:hover, 
-button:focus {
+.default:hover,
+.default:focus {
     background: #AEAEAE;
 }
 
@@ -38,6 +47,7 @@ button:focus {
 
 .section {
     padding-bottom: 1rem;
+    position: relative;
 }
 
  .outline {
@@ -74,10 +84,7 @@ button:focus {
     border-radius: 6px;
 }
 
-.disabledshadow:hover,
 .disabledshadow {
-    color: #FFFFFF;
-    background: #3D5AFE;
     box-shadow: none;
 }
 
@@ -96,34 +103,45 @@ button:focus {
     box-shadow: none;
 }
 
-.endIcon:hover,
-.startIcon:hover,
-.endIcon,
-.startIcon {
-    color: #FFFFFF;
-    background: #2962FF;
+svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
 }
 
-.small:hover,
+.startIcon {
+    padding: 8px 16px 8px 40px;
+}
+
+.startIcon svg {
+    top: 45%;
+    bottom: auto;
+    left: 6%;
+    right: auto;
+}
+
+.endIcon {
+    padding: 8px 40px 8px 16px;
+}
+
+.endIcon svg {
+    top: 45%;
+    bottom: auto;
+    left: auto;
+    right: 68%;
+}
+
 .small {
-    color: #FFFFFF;
-    background: #2962FF;
     box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
     padding: 6px 12px 6px 12px;
 }
 
-.medium:hover,
 .medium {
-    color: #FFFFFF;
-    background: #2962FF;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
     padding: 8px 16px 8px 16px;
 }
 
-.large:hover,
 .large {
-    color: #FFFFFF;
-    background: #2962FF;
     box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
     padding: 11px 22px 11px 22px;
 }
@@ -146,7 +164,7 @@ button:focus {
     box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
 }
 
-.primary:hover {
+.primary:hover:not(.small):not(.medium):not(.large):not(.disabledshadow):not(.startIcon):not(.endIcon) {
     background: #0039CB;
 }
 
